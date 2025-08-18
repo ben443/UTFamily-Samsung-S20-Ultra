@@ -1,0 +1,26 @@
+name: Build Ubuntu Touch
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Make build.sh executable
+      run: chmod +x ./build.sh
+
+    - name: Run build.sh
+      run: ./build.sh
+
+    # Optional: Upload build artifacts
+    - name: Upload build output
+      uses: actions/upload-artifact@v4
