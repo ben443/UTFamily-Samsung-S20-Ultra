@@ -13,7 +13,7 @@ deviceinfo_ubuntu_touch_release="focal"
 
 deviceinfo_kernel_source="https://github.com/ben443/linux-android-samsung-exynos990.git"
 deviceinfo_kernel_source_branch="halium-13"
-deviceinfo_kernel_defconfig="droidian_defconfig"
+deviceinfo_kernel_defconfig="z3s_defconfig droidian.config"
 deviceinfo_kernel_clang_compile="true"
 deviceinfo_kernel_clang_branch="android12L-gsi"
 deviceinfo_kernel_clang_revision="r416183b"
