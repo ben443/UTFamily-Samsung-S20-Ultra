@@ -24,4 +24,4 @@ jobs:
     - name: Upload bd folder
       uses: actions/upload-artifact@v4
       with:
-        path: bd/*.img
+        path: bd/tmp/*
